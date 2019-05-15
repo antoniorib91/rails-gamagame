@@ -1,0 +1,2 @@
+module GamagameHelper
+end
