@@ -1,1 +1,41 @@
-@import "bootstrap";
+@import "imports";
+
+body {
+    background-color: $grey;
+}
+
+.gama-nav-bar {
+    background-color: $blue2;
+    color: $white;
+    font-family: "Source Sans Pro", sans-serif;
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+        display: inline-flex;
+        list-style-type: none;
+        padding: 0;
+        margin: 15px 75px;
+
+        li {
+            padding: 0px 15px;
+
+            a {
+                color: $white;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .nav-game-name {
+        a {
+            font-size: 35px;
+            font-weight: bold;
+        }
+    }
+
+    .nav-links {
+        align-items: center;
+        font-weight: bold;
+    }
+}
