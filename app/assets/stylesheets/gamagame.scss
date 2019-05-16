@@ -2,7 +2,40 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.card-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 60px 80px;
 
-.default-content {
-    margin: 75px;
+    div {
+        text-align: center;
+        padding: 10px;
+    }
+
+    h2 {
+        font-weight: bold;
+    }
 }
+
+.card-question-content {
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.button-green {
+    width: 200px;
+    height: 60px;
+    color: $grey;
+    font-size: 25px;
+    background-color: $green2;
+    border: transparent;
+    border-radius: 5px;
+
+
+    &:hover {
+        color: $grey2;
+        background-color: $green5;
+    }
+}
+

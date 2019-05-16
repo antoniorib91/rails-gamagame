@@ -9,11 +9,20 @@
   </head>
 
   <body>
-    <div class="container">
-      <div>
-        MENU TOP
+      <nav class="gama-nav-bar">
+        <ul class="nav-game-name">
+          <li><a href="#">Gama Game</a></li>
+        </ul>
+        <ul class="nav-links">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+      </nav>
+      <div class="container-fluid">
+        <%= yield %>
       </div>
-      <%= yield %>
+
     </div>
   </body>
 </html>

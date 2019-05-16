@@ -1,2 +1,21 @@
-<h1>Gamagame#start</h1>
-<p>Find me in app/views/gamagame/start.html.erb</p>
+<div class="row">
+  <div class="col-md-12">
+      <%= render "shared/card" do %>
+        <div class="card-content">
+          <div>
+            <h2>Come play with us!</h2>
+          </div>
+          <div>
+            <p>
+                Have you ever played Gama Game? It's a game of general knowledge question and
+              answers. It used to be played at #gamagame, an IRC (Internet Relay Chat) channel in the
+              Brasnet network, witch no longer exists.
+            </p>
+          </div>
+          <div>
+            <button class="button-green">Start</button>
+          </div>
+        </div>
+      <% end %>
+  </div>
+</div>
