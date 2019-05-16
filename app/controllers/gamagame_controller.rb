@@ -2,7 +2,7 @@ class GamagameController < ApplicationController
   def start
   end
 
-  def question
+  def questions
   end
 
   def score
