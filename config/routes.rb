@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'gamagame/start'
 
-  get 'gamagame/question'
+  get 'gamagame/questions'
 
   get 'gamagame/score'
 
