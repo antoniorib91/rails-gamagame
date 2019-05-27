@@ -9,7 +9,7 @@ end
 gem 'puma', '~> 3.7'
 gem 'rails', '~> 5.1.1'
 gem 'sass-rails', '~> 5.0'
-gem 'sqlite3'
+gem 'sqlite3', '~> 1.3.6'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'uglifier', '>= 1.3.0'
 gem 'bootstrap', '~> 4.3.1'
@@ -19,10 +19,14 @@ gem "loofah", "~> 2.2.3"
 gem "rack", "~> 2.0.6"
 gem "activejob", "~> 5.1.6.1"
 gem "actionview", "~> 5.1.6.2"
+gem 'rails-controller-testing'
+
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails'
+  gem 'pry-byebug'
+  gem 'database_cleaner'
 end
 
 group :development do
