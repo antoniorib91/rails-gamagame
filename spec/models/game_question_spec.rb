@@ -1,5 +1,11 @@
 require 'rails_helper'
 
 RSpec.describe GameQuestion, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  context "#associations" do
+    
+    [:game, :question].each { |association| 
+      it { should belong_to(association) }
+    }
+  end
+  
 end

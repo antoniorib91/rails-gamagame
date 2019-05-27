@@ -11,5 +11,16 @@ require 'rails_helper'
 #   end
 # end
 RSpec.describe GamagameHelper, type: :helper do
-  # pending "add some examples to (or delete) #{__FILE__}"
+#   pending "add some examples to (or delete) #{__FILE__}"
+
+  describe "#label_field" do
+    
+    subject { helper.label_field(1) } 
+    
+    it "should return string" do
+      match_str = "<label for=\"game_question_selected_answer_1\" class=\"custom-radio\"></label>"
+      expect(subject).to eq match_str
+    end      
+  end
+  
 end
