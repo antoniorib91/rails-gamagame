@@ -13,7 +13,7 @@
             </p>
           </div>
           <div>
-            <button class="button-green">Start</button>
+            <%= button_to 'Start', create_game_path, method: :post , class: 'button-green' %>
           </div>
         </div>
       <% end %>

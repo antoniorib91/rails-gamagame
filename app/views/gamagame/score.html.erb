@@ -1,2 +1,17 @@
-<h1>Gamagame#score</h1>
-<p>Find me in app/views/gamagame/score.html.erb</p>
+<div class="row">
+  <div class="col-md-12">
+      <%= render "shared/card" do %>
+        <div class="card-content">
+          <div>
+            <h2>Congratulations! You completed the game!</h2>
+          </div>
+          <div>
+            <p class="">Your score was <label class="score-number"><%= @score %>/10</label></p>
+          </div>
+          <div>
+            <%= button_to 'Start a new game', create_game_path, method: :post , class: 'button-green' %>
+          </div>
+        </div>
+      <% end %>
+  </div>
+</div>

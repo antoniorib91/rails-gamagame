@@ -4,7 +4,7 @@
 
 .card-content {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: column;
     justify-content: center;
     font-family: "Source Sans Pro", sans-serif;
     margin: 60px 80px;
@@ -17,6 +17,13 @@
     h2 {
         font-weight: bold;
     }
+
+    .score-number {
+        font-size: 32px;
+        color: $orange;
+        vertical-align: middle;
+    } 
+    
 }
 
 .card-question-content {
@@ -27,7 +34,7 @@
     width: 200px;
     height: 60px;
     color: $grey;
-    font-size: 25px;
+    font-size: 20px;
     background-color: $green2;
     border: transparent;
     border-radius: 5px;
