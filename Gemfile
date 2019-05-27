@@ -13,6 +13,12 @@ gem 'sqlite3'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'uglifier', '>= 1.3.0'
 gem 'bootstrap', '~> 4.3.1'
+gem "rails-html-sanitizer", "~> 1.0.4"
+gem "sprockets", "~> 3.7.2"
+gem "loofah", "~> 2.2.3"
+gem "rack", "~> 2.0.6"
+gem "activejob", "~> 5.1.6.1"
+gem "actionview", "~> 5.1.6.2"
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

@@ -3,15 +3,20 @@ class GamagameQuestionsController < ApplicationController
   def edit
     @gameQuestion = current_game.game_questions.answer_null.order_by_number.first
 
-    redirect_to score_path, token: current_game.token unless !@gameQuestion.nil?
-    @question = @gameQuestion.question unless @gameQuestion.nil?
+    if @gameQuestion.nil?
+      redirect_to score_path, token: current_game.token
+    else
+      @question = @gameQuestion.question
+
+      respond_to do |format| 
+        format.html { render "edit" } 
+      end
+    end
   end
 
   def update
     @gameQuestion = GameQuestion.find(params[:id])
     question = @gameQuestion.question
-    puts "HERE QUESTION ANSWER #{question.answer}"
-    puts "HERE GAMAGAME_QUESTION ANSWER #{question.answer}"
 
     if  gamagame_questions_params[:selected_answer] != question.answer
       @gameQuestion.is_correct = false 
